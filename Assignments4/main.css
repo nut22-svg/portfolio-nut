@@ -1,0 +1,123 @@
+/* จัดหน้าเว็บให้อยู่ตรงกลาง */
+body {
+    font-family: 'Prompt', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ความกว้าง */
+#myLogin, #myRegister {
+    width: 100%;
+    max-width: 460px;
+}
+
+fieldset {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem 2.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    line-height: 1.8;
+}
+
+/* หัวข้อ */
+legend {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0891b2;
+    padding: 0 10px;
+}
+
+/* ข้อความ ที่แจ้งเตือน */
+span {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+#errormsg {
+    color: #ef4444;
+    font-weight: 600;
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px 14px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    color: #1e293b;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    background-color: #ffffff;
+    border-color: #0891b2;
+    box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.15);
+}
+
+input[type="radio"] {
+    accent-color: #0891b2;
+    margin-left: 8px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+/* ปุ่ม Submit และ Reset */
+input[type="submit"],
+input[type="reset"] {
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-top: 14px;
+    margin-right: 8px;
+    transition: all 0.2s ease;
+}
+
+/* ปุ่ม Register และ Login */
+#loginBtn,
+#registerBtn {
+    background-color: #0891b2;
+    color: #ffffff;
+}
+
+#loginBtn:hover,
+#registerBtn:hover {
+    background-color: #0e7490;
+    transform: translateY(-1px);
+}
+
+/* ปุ่ม Reset และ Clear */
+#clearBtn,
+#resetBtn {
+    background-color: #f1f5f9;
+    color: #64748b;
+    border: 1px solid #cbd5e1;
+}
+
+#clearBtn:hover,
+#resetBtn:hover {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
